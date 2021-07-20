@@ -36,7 +36,7 @@ d3.csv("ABC.csv").then(function(data) {
     g.append("g")
       .call(d3.axisLeft(yScale).tickFormat(function(d){
           return d;
-      }).ticks(8))
+      }).ticks(8).tickSize(-width))
       //Y軸標示 Branch
       .append("text")
       .attr("transform", "rotate(-90)")
